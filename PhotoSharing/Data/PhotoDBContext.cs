@@ -7,9 +7,9 @@ using PhotoSharing.Models;
 
 namespace PhotoSharing.Data
 {
-    public class PhotoDBController:DbContext
+    public class PhotoDBContext:DbContext
     {
-        public PhotoDBController() : base("KeyPhoto") { }
+        public PhotoDBContext() : base("KeyPhoto") { }
 
         public DbSet<Photo> Photos { get; set; }
 

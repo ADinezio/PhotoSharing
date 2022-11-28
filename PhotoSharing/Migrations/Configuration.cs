@@ -5,14 +5,14 @@
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<PhotoSharing.Data.PhotoDBController>
+    internal sealed class Configuration : DbMigrationsConfiguration<PhotoSharing.Data.PhotoDBContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(PhotoSharing.Data.PhotoDBController context)
+        protected override void Seed(PhotoSharing.Data.PhotoDBContext context)
         {
             //  This method will be called after migrating to the latest version.
 
