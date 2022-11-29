@@ -21,6 +21,7 @@ namespace PhotoSharing.Controllers
             return View("Index");
 
         }
+
         [ChildActionOnly]
         public ActionResult _PhotoGallery(int number = 0)
         {
@@ -39,6 +40,8 @@ namespace PhotoSharing.Controllers
             return PartialView("_PhotoGallery",photos);
 
         }
+
+
 
         public ActionResult Display(int id)
         {
